@@ -8,6 +8,7 @@ struct station {
     pthread_cond_t car_available;
     int waiting_passengers;
     int car_present;
+    int seats_available;
 };
 
 void station_init(struct station *station);
