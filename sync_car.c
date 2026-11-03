@@ -19,6 +19,24 @@ void station_wait_for_car(struct station *station){
     }
 
     station->waiting_passengers--;
+    pthread_cond_broadcast(&station->car_available);
     pthread_mutex_unlock(&station->mutex);
+}
+void station_load_car(struct station *station, int count)
+{
+    (void) count;
 
+    pthread_mutex_lock(&station->mutex);
+
+    station->car_present = 1;
+
+    pthread_cond_broadcast(&station->car_available);
+
+    while (station->waiting_passengers > 0) {
+        pthread_cond_wait(&station->car_available, &station->mutex);
+    }
+
+    station->car_present = 0;
+
+    pthread_mutex_unlock(&station->mutex);
 }
