@@ -5,9 +5,12 @@
 
 struct station {
     pthread_mutex_t mutex;
+    pthread_cond_t car_available;
     int waiting_passengers;
+    int car_present;
 };
 
 void station_init(struct station *station);
+void station_wait_for_car(struct station *station);
 
 #endif
