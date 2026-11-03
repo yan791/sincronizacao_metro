@@ -17,4 +17,8 @@ void station_wait_for_car(struct station *station){
     while (!station->car_present) {
         pthread_cond_wait(&station->car_available, &station->mutex);
     }
+
+    station->waiting_passengers--;
+    pthread_mutex_unlock(&station->mutex);
+
 }
