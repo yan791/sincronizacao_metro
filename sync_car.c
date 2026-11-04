@@ -41,11 +41,11 @@ void station_load_car(struct station *station, int count)
 
     pthread_cond_broadcast(&station->car_available);
 
-    while (station->seats_available > 0 && station->waiting_passengers > 0) {
-    pthread_cond_wait(&station->car_available, &station->mutex);
+    while ((station->seats_available > 0 && station->waiting_passengers > 0) || station->passengers_boarded < station->passengers_released) {
+    pthread_cond_wait(&station->all_boarded, &station->mutex);
 }
-
     station->car_present = 0;
+    station->seats_available = 0;
 
     pthread_mutex_unlock(&station->mutex);
 }

@@ -238,3 +238,31 @@ To https://github.com/yan791/sincronizacao_metro.git
 [?2004lexit
 
 Script concluído em 2026-11-04 11:41:34-03:00 [COMMAND_EXIT_CODE="0"]
+Script iniciado em 2026-11-04 13:31:19-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="182" LINES="20"]
+[?2004h]0;yan@yan-VirtualBox: ~/Área de trabalho/yrn[01;32myan@yan-VirtualBox[00m:[01;34m~/Área de trabalho/yrn[00m$ git add .
+[?2004l[?2004h]0;yan@yan-VirtualBox: ~/Área de trabalho/yrn[01;32myan@yan-VirtualBox[00m:[01;34m~/Área de trabalho/yrn[00m$ git commit -m "[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7mgit commit -m "Implementa reserva de assentos pelos passageiros"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit commit -m "Implementa reserva de assentos pelos passageiros"[1@n[1@d[1@o[C[1@ [1@a
+[?2004l[main 450933e] Implementando a reserva de assentos pelos passageiros
+ 2 files changed, 27 insertions(+), 6 deletions(-)
+[?2004h]0;yan@yan-VirtualBox: ~/Área de trabalho/yrn[01;32myan@yan-VirtualBox[00m:[01;34m~/Área de trabalho/yrn[00m$ git push
+[?2004lEnumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 680 bytes | 48.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To https://github.com/yan791/sincronizacao_metro.git
+   017a68c..450933e  main -> main
+[?2004h]0;yan@yan-VirtualBox: ~/Área de trabalho/yrn[01;32myan@yan-VirtualBox[00m:[01;34m~/Área de trabalho/yrn[00m$ [K]0;yan@yan-VirtualBox: ~/Área de trabalho/yrn[01;32myan@yan-VirtualBox[00m:[01;34m~/Área de trabalho/yrn[00m$ [K]0;yan@yan-VirtualBox: ~/Área de trabalho/yrn[01;32myan@yan-VirtualBox[00m:[01;34m~/Área de trabalho/yrn[00m$ git add .
+[?2004l[?2004h]0;yan@yan-VirtualBox: ~/Área de trabalho/yrn[01;32myan@yan-VirtualBox[00m:[01;34m~/Área de trabalho/yrn[00m$ git commit -m "[7mImplementa confirmacao efetiva de embarque"[27mImplementa confirmacao efetiva de embarque"[C[C[C[C[C[C[C[C[C[C[1@n[1@d[1@o[C[1@ [1@a
+[?2004l[main 7361b6c] Implementando a confirmacao efetiva de embarque
+ 2 files changed, 9 insertions(+)
+[?2004h]0;yan@yan-VirtualBox: ~/Área de trabalho/yrn[01;32myan@yan-VirtualBox[00m:[01;34m~/Área de trabalho/yrn[00m$ git push
+[?2004lEnumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 459 bytes | 153.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To https://githu
