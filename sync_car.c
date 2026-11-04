@@ -4,10 +4,13 @@ void station_init(struct station *station)
 {
     pthread_mutex_init(&station->mutex, NULL);
     pthread_cond_init(&station->car_available, NULL);
-
+    pthread_cond_init(&station->all_boarded, NULL);
+    
     station->waiting_passengers = 0;
     station->car_present = 0;
     station->seats_available = 0;
+    station->passengers_released = 0;
+    station->passengers_boarded = 0;
 }
 
 void station_wait_for_car(struct station *station){
