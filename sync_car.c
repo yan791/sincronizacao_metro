@@ -49,3 +49,11 @@ void station_load_car(struct station *station, int count)
 
     pthread_mutex_unlock(&station->mutex);
 }
+void station_on_board(struct station *station)
+{
+    pthread_mutex_lock(&station->mutex);
+    station->passengers_boarded++;
+
+    pthread_cond_signal(&station->all_boarded);
+    pthread_mutex_unlock(&station->mutex);
+}
